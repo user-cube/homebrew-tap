@@ -5,21 +5,21 @@
 class AwsCliManager < Formula
   desc "CLI tool for managing AWS CLI"
   homepage "https://github.com/user-cube/aws-cli-manager"
-  version "2.3.1"
+  version "2.3.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.1/aws-cli-manager_2.3.1_darwin_amd64.tar.gz"
-      sha256 "e2147d772ae55446074d400545d8cffb657c20ad09b3aaa4898fa27bad51579c"
+      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.2/aws-cli-manager_2.3.2_darwin_amd64.tar.gz"
+      sha256 "9c60a01257b9c38918156e003f2fcead66d2ae411a6c5a5c1715d54f25ea0baa"
 
       define_method(:install) do
         bin.install "aws-cli-manager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.1/aws-cli-manager_2.3.1_darwin_arm64.tar.gz"
-      sha256 "1e8331af36b8bf2e2b7ed3ce009da753ce0b2d7df48ef7b53783becab0bf1de2"
+      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.2/aws-cli-manager_2.3.2_darwin_arm64.tar.gz"
+      sha256 "d54d412d2f77956b589f7aab1c7c81c18e330be0584405c0e7173644deb5e02a"
 
       define_method(:install) do
         bin.install "aws-cli-manager"
@@ -29,15 +29,15 @@ class AwsCliManager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.1/aws-cli-manager_2.3.1_linux_amd64.tar.gz"
-      sha256 "c297580d2090b148aa6f10c89d85d79b24c682be5580a4f399052b6a6c969fe7"
+      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.2/aws-cli-manager_2.3.2_linux_amd64.tar.gz"
+      sha256 "6059a21cdef2758a34606cef57594aa458313ed1763d9984cf4159e5a128b676"
       define_method(:install) do
         bin.install "aws-cli-manager"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.1/aws-cli-manager_2.3.1_linux_arm64.tar.gz"
-      sha256 "85038c8fbf8237b6a2ea96d49247e42f50dc53380f68c0acff5d941afc20e4e6"
+      url "https://github.com/user-cube/aws-cli-manager/releases/download/v2.3.2/aws-cli-manager_2.3.2_linux_arm64.tar.gz"
+      sha256 "94aac7ba43010b60ec02a8ebfe51cf2e015bbea4fc17b3e4c65e3bbc83c8985e"
       define_method(:install) do
         bin.install "aws-cli-manager"
       end
