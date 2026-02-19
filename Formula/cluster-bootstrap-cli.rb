@@ -12,18 +12,10 @@ class ClusterBootstrapCli < Formula
     if Hardware::CPU.intel?
       url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.0/cluster-bootstrap-cli-darwin-amd64.tar.gz"
       sha256 "701eec92e77135746c57a1ab24da91d0d03f0b9bd8a959d278775aede92ab43e"
-
-      def install
-        bin.install "cluster-bootstrap-cli"
-      end
     end
     if Hardware::CPU.arm?
       url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.0/cluster-bootstrap-cli-darwin-arm64.tar.gz"
       sha256 "f2623c30fc9f1a4028b634d46d043b69e5137281c804f021e7c60aec5821e534"
-
-      def install
-        bin.install "cluster-bootstrap-cli"
-      end
     end
   end
 
@@ -31,17 +23,15 @@ class ClusterBootstrapCli < Formula
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.0/cluster-bootstrap-cli-linux-amd64.tar.gz"
       sha256 "43bab642eefbea498f5686ad06de63e35476388f49787c599c45622ad804d2d0"
-      def install
-        bin.install "cluster-bootstrap-cli"
-      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.0/cluster-bootstrap-cli-linux-arm64.tar.gz"
       sha256 "25e7235500de3b9d87e502a1450758b12722703fb72fdc88d85c1aac38a5520e"
-      def install
-        bin.install "cluster-bootstrap-cli"
-      end
     end
+  end
+
+  def install
+    bin.install "cluster-bootstrap-cli"
   end
 
   test do
