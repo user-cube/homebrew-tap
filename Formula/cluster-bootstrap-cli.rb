@@ -5,23 +5,23 @@
 class ClusterBootstrapCli < Formula
   desc "CLI tool to bootstrap Kubernetes clusters"
   homepage "https://github.com/user-cube/cluster-bootstrap"
-  version "1.7.1"
+  version "1.7.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.1/cluster-bootstrap-cli-darwin-amd64.tar.gz"
-      sha256 "4f720c9f0d5bc484f269960412a0c1e462ea6a5b28a9daaa0317bc9faae3d196"
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.2/cluster-bootstrap-cli-darwin-amd64.tar.gz"
+      sha256 "4dfa4cf3fcd889352775fdf7f1dece2711d29acf69501938522ee7429526a0cc"
 
-      def install
+      define_method(:install) do
         bin.install "cluster-bootstrap-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.1/cluster-bootstrap-cli-darwin-arm64.tar.gz"
-      sha256 "f83eb774557bb873dbf5674531af3664fa0c9c4664becca201e45ed2005b50fd"
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.2/cluster-bootstrap-cli-darwin-arm64.tar.gz"
+      sha256 "4c368228276e876acbef5a780a0cef385ca55b52ae70c5e301fffe32c8ae708f"
 
-      def install
+      define_method(:install) do
         bin.install "cluster-bootstrap-cli"
       end
     end
@@ -29,16 +29,16 @@ class ClusterBootstrapCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.1/cluster-bootstrap-cli-linux-amd64.tar.gz"
-      sha256 "f64b794a7bb5f6d57d273eb7ff9b6cb7b98bf4c1ef41ad86c5052f5785ce371a"
-      def install
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.2/cluster-bootstrap-cli-linux-amd64.tar.gz"
+      sha256 "cd5d785217041e415fcfd06783cc33699c842a6fb8a95ff18199c30e0d0a87ae"
+      define_method(:install) do
         bin.install "cluster-bootstrap-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.1/cluster-bootstrap-cli-linux-arm64.tar.gz"
-      sha256 "19eb10c7e2618e2d972b26e3ae3e4fb6558527d7c8aed3bdea1c92a130526a0d"
-      def install
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.7.2/cluster-bootstrap-cli-linux-arm64.tar.gz"
+      sha256 "f12ad28cbdf465e19865951e2dd436854314694b6418b5d4086e1c3733e80d87"
+      define_method(:install) do
         bin.install "cluster-bootstrap-cli"
       end
     end
