@@ -5,21 +5,21 @@
 class Kontext < Formula
   desc "CLI tool for managing Kubernetes contexts"
   homepage "https://github.com/user-cube/kontext"
-  version "1.3.5"
+  version "1.3.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/user-cube/kontext/releases/download/v1.3.5/kontext_1.3.5_darwin_amd64.tar.gz"
-      sha256 "97d892e5fe143dc5dc14b1b3adc78ca35ba51b73eeb1fb3b24bd5d609f5e35ea"
+      url "https://github.com/user-cube/kontext/releases/download/v1.3.6/kontext_1.3.6_darwin_amd64.tar.gz"
+      sha256 "d0d8c9e2c8c0b19f9e6e000dd4ccaa8eeed55cd23deb20b17173a1d51df84a25"
 
       define_method(:install) do
         bin.install "kontext"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/user-cube/kontext/releases/download/v1.3.5/kontext_1.3.5_darwin_arm64.tar.gz"
-      sha256 "fb7ef012a9ea3a1efb652c015f004d57c9c8262b0c70e2a42d782d4096cfc4ad"
+      url "https://github.com/user-cube/kontext/releases/download/v1.3.6/kontext_1.3.6_darwin_arm64.tar.gz"
+      sha256 "bae23af7e44bbe72870315cf900efef7d077e13e1b6a45a0bbd3480e366d092f"
 
       define_method(:install) do
         bin.install "kontext"
@@ -29,15 +29,15 @@ class Kontext < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/kontext/releases/download/v1.3.5/kontext_1.3.5_linux_amd64.tar.gz"
-      sha256 "6cad9e67169edf529a4ba12bd6a20c0d025f585a637ef97591d7e9530279d909"
+      url "https://github.com/user-cube/kontext/releases/download/v1.3.6/kontext_1.3.6_linux_amd64.tar.gz"
+      sha256 "afcfd7c9bfb74c40278fdf558c2cc5597b7e79eacd663826163a45d8b1990046"
       define_method(:install) do
         bin.install "kontext"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/kontext/releases/download/v1.3.5/kontext_1.3.5_linux_arm64.tar.gz"
-      sha256 "9b78518e9041e3b3658c405ebfc61985092a0dbb60b64994a12f9422c578897b"
+      url "https://github.com/user-cube/kontext/releases/download/v1.3.6/kontext_1.3.6_linux_arm64.tar.gz"
+      sha256 "6b2e2eba597521f765546f83492d260061615c9494d3e5222011a0a9aa627986"
       define_method(:install) do
         bin.install "kontext"
       end
