@@ -5,21 +5,21 @@
 class ClusterBootstrapCli < Formula
   desc "CLI tool to bootstrap Kubernetes clusters"
   homepage "https://github.com/user-cube/cluster-bootstrap"
-  version "1.9.0"
+  version "1.10.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.9.0/cluster-bootstrap-cli-darwin-amd64.tar.gz"
-      sha256 "5e8062670a922dbd2275df99623bb3b533f433338b4d1bedeaeb922ef436c71a"
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.10.0/cluster-bootstrap-cli-darwin-amd64.tar.gz"
+      sha256 "6c28291ca6b2c331093ac5cbdd5efbe0d085442a082ff443b6ce5ea82925a356"
 
       define_method(:install) do
         bin.install "cluster-bootstrap-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.9.0/cluster-bootstrap-cli-darwin-arm64.tar.gz"
-      sha256 "de7284be99f5a51ba6f917e6ac6182fcdad26bbcbe9bc15b3d104992a56cf68c"
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.10.0/cluster-bootstrap-cli-darwin-arm64.tar.gz"
+      sha256 "6bfaf5d8032216cfcd5a2480179ff22939aac32f9f40c541599e4b00a33a9cbe"
 
       define_method(:install) do
         bin.install "cluster-bootstrap-cli"
@@ -29,15 +29,15 @@ class ClusterBootstrapCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.9.0/cluster-bootstrap-cli-linux-amd64.tar.gz"
-      sha256 "5906491c5aff35423c3231ac645011f80471ae58972f6c86301b7ac13b50d127"
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.10.0/cluster-bootstrap-cli-linux-amd64.tar.gz"
+      sha256 "cfed560b1d36282002535411208c42e8ce02f0970501ea73f6a3ce47583077e0"
       define_method(:install) do
         bin.install "cluster-bootstrap-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.9.0/cluster-bootstrap-cli-linux-arm64.tar.gz"
-      sha256 "ee7ff48c2bc980eb10c0f4afc81a29ec6e60a782677a0e6021818eeb411eac75"
+      url "https://github.com/user-cube/cluster-bootstrap/releases/download/v1.10.0/cluster-bootstrap-cli-linux-arm64.tar.gz"
+      sha256 "8916d01ab65889d8828d0fb07422d87a3823bd7f07d3e10ad389c705c0a63189"
       define_method(:install) do
         bin.install "cluster-bootstrap-cli"
       end
