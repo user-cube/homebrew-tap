@@ -1,8 +1,8 @@
 class Tackle < Formula
   desc "Developer tools for everyday work"
   homepage "https://github.com/user-cube/tackle"
-  url "https://github.com/user-cube/tackle/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "6d5165ab6301fc2bf42ab4180df9aeceaa502d4fceddbc9ce39866f0d309fc0b"
+  url "https://github.com/user-cube/tackle/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "063648f58a25a1c81620a9d56d9e0772faff06c458b44d13102b85c640990748"
   license "Apache-2.0"
 
   depends_on "go" => :build
