@@ -5,21 +5,21 @@ class Tackle < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.5/tackle_0.2.5_darwin_arm64.tar.gz"
-      sha256 "7e8a2c2eef18d5ae20146d9987cb3a2a8995ee7bebabec2cc93ce5af14dff9bc"
+      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.6/tackle_0.2.6_darwin_arm64.tar.gz"
+      sha256 "510fa3901461079312f41143ed3a2fc9b8e70b0e6a0c691a3ffc462d0051ae2e"
     else
-      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.5/tackle_0.2.5_darwin_amd64.tar.gz"
-      sha256 "c0a5fe6479d8884aa8d9a8dc361ac5d65dbae06dacd072c918477cae89b8ab8c"
+      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.6/tackle_0.2.6_darwin_amd64.tar.gz"
+      sha256 "65318aa64e81f86933c72a81665cf875b3fc5dc7e6259587a736b7af951c7c22"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.5/tackle_0.2.5_linux_arm64.tar.gz"
-      sha256 "33228142cc432af7ba404d621d59265369f6a112af03763d3cf11df7ca402df6"
+      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.6/tackle_0.2.6_linux_arm64.tar.gz"
+      sha256 "b265afcd8f2a02d503e51b6092aa3f473c4c5fcab2aa2d6cb77d118462738f39"
     else
-      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.5/tackle_0.2.5_linux_amd64.tar.gz"
-      sha256 "d2028c8621cfcd4ac73906bd5da57f9803de450de439ff5342a6e783ef332438"
+      url "https://github.com/user-cube/releases/releases/download/tackle-v0.2.6/tackle_0.2.6_linux_amd64.tar.gz"
+      sha256 "4cd4981ff5afeeade78329f47bff363a49d8668b9c07bdfff4ccaf411db93396"
     end
   end
 
