@@ -1,6 +1,6 @@
 cask "tackle-desktop" do
-  version "0.9.0"
-  sha256 "33902812744a48fc79974e5a5508af9c44fa52918f90cbef9a9880182d2a9799"
+  version "0.10.0"
+  sha256 "cbc55f410561c0e01e67fc6e91184eb8fee6a10f6d8c3b45bd16d98ef389a81a"
 
   url "https://github.com/user-cube/releases/releases/download/tackle-v#{version}/Tackle_Desktop_#{version}_darwin_universal.zip"
   name "Tackle Desktop"
